@@ -20,6 +20,18 @@ Demo project to run Django application in Google Cloud Platform(GCP).
     - In container, running Django application.
     - For `/static` requests, response 404 (application does not collect static contents)
 
+## Usage commands
+
+```
+$ poetry install
+$ poetry build
+$ docker build -t gcr.io/YOUR-PROJECT/YOUR-IMAGE-NAME
+$ docker push gcr.io/YOUR-PROJECT/YOUR-IMAGE-NAME
+$ yarn
+$ poetry run ./manage.py collectstatic
+$ yarn firebase deploy
+```
+
 ## References
 
 - https://firebase.google.com/docs/hosting/cloud-run?hl=ja#direct_requests_to_container
